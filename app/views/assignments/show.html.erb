@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @assignment.employee %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @assignment.client %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @assignment.start_date %>
+</p>
+
+<p>
+  <strong>Current:</strong>
+  <%= @assignment.current %>
+</p>
+
+<%= link_to 'Edit', edit_assignment_path(@assignment) %> |
+<%= link_to 'Back', assignments_path %>

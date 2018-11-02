@@ -4,7 +4,9 @@ class ClientsController < ApplicationController
   # GET /clients
   # GET /clients.json
   def index
-    @clients = Client.all
+    response = GroundControl.new
+    json = response.parsed_response
+    render json: json
   end
 
   # GET /clients/1

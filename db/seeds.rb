@@ -14,5 +14,3 @@ csv.each do |row|
   t.full_time = row['Full-time?']
   t.save
 end
-
-puts "There are now #{Employee.count} rows in the employee table"

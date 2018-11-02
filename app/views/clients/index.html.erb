@@ -15,18 +15,18 @@
   </thead>
 
   <tbody>
-    <% @clients.each do |client| %>
-      <tr>
-        <td><%= client.name %></td>
-        <td><%= client.backend %></td>
-        <td><%= client.frontend %></td>
-        <td><%= client.current %></td>
-        <td><%= client.employee %></td>
-        <td><%= link_to 'Show', client %></td>
-        <td><%= link_to 'Edit', edit_client_path(client) %></td>
-        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <%# <% @clients.each do |client| %>
+    <%#   <tr>
+    <%#     <td><%= client.name %></td>
+    <%#     <td><%= client.backend %></td>
+    <%#     <td><%= client.frontend %></td>
+    <%#     <td><%= client.current %></td>
+    <%#     <td><%= client.employee %></td>
+    <%#     <td><%= link_to 'Show', client %></td>
+    <%#     <td><%= link_to 'Edit', edit_client_path(client) %></td>
+    <%#     <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <%#   </tr>
+    <%# <% end %>
   </tbody>
 </table>
 

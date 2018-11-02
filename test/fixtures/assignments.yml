@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee: one
+  client: one
+  start_date: 2018-11-02
+  current: false
+
+two:
+  employee: two
+  client: two
+  start_date: 2018-11-02
+  current: false
