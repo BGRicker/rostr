@@ -4,14 +4,12 @@ class AssignmentsController < ApplicationController
   # GET /assignments
   # GET /assignments.json
   def index
-    search_term = params['']
     @assignments = Assignment.all
   end
 
   # GET /assignments/1
   # GET /assignments/1.json
   def show
-    search_term = GroundControl.response[params['']]
   end
 
   # GET /assignments/new
@@ -20,6 +18,7 @@ class AssignmentsController < ApplicationController
     employee = Employee.where(id: @assignment.employee_id)
     client = Client.where(id: @assignment.employee_id)
     client << employee
+    NewAssignmentMailer.new_assignment_email(@assignment).deliver
   end
 
   # GET /assignments/1/edit

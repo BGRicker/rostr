@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'httparty'
 gem 'rack-cors', require: 'rack/cors'
+gem 'rest-client'
+gem 'indico'
 
 group :development, :test do
   gem 'dotenv-rails'
